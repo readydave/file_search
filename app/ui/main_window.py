@@ -1,5 +1,7 @@
 # app/ui/main_window.py
 
+import os
+import csv
 import tkinter as tk
 from tkinter import filedialog, ttk, messagebox
 import threading
@@ -222,20 +224,36 @@ class FileSearchApp:
         if not self.found_files:
             messagebox.showinfo("No Results", "There are no results to export.")
             return
+        
         file_path = filedialog.asksaveasfilename(
             defaultextension=".csv",
             filetypes=[("CSV file", "*.csv"), ("Text file", "*.txt")]
         )
-        if not file_path: return
+
+        if not file_path:
+            return
+
         try:
+            # --- CSV EXPORT LOGIC ---
             if file_path.endswith('.csv'):
+                # The 'newline=""' argument prevents blank rows between entries.
                 with open(file_path, 'w', newline='', encoding='utf-8') as f:
                     writer = csv.writer(f)
+                    
+                    # 1. Write the header as a single row.
                     writer.writerow(["File Path"])
+                    
+                    # 2. Use writerows to write each path as a new, separate row.
+                    # This list comprehension formats the data correctly for writerows.
                     writer.writerows([[path] for path in self.found_files])
+
+            # --- TXT EXPORT LOGIC ---
             else:
                 with open(file_path, 'w', encoding='utf-8') as f:
-                    f.write('\n'.join(self.found_files))
+                    # This generator expression adds a newline character after each path
+                    # and writelines() writes each one to the file.
+                    f.writelines(f"{path}\n" for path in self.found_files)
+            
             messagebox.showinfo("Export Successful", f"Results successfully exported to {os.path.basename(file_path)}")
         except Exception as e:
             messagebox.showerror("Export Error", f"An error occurred during export: {e}")
