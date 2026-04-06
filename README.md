@@ -2,12 +2,15 @@
 
 An intuitive desktop application built with Python and Tkinter that allows users to perform advanced searches for files within a selected directory on Windows. Search by filename or file content, filter by common file types, and export the results.
 
-![File Search App Screenshot](https://i.imgur.com/your-screenshot-url.png)
-*(Recommendation: Replace the link above with a URL to a screenshot of your application)*
+![File Search Main Window](https://github.com/user-attachments/assets/f9058f91-06bb-4a47-83a1-0b6a70d3750d)
+*The main application interface.*
+
+![File Search Results Example](https://github.com/user-attachments/assets/a0620300-5266-4b5c-87ce-c10314197ddc)
+*The search results interface.*
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 *   **Flexible Search Modes:** Search for a keyword within file names or dive deep by searching within the text content of files.
 *   **Content-Aware Searching:** Reads content from various file formats, including:
@@ -22,14 +25,10 @@ An intuitive desktop application built with Python and Tkinter that allows users
 *   **Live Results Counter:** See the number of files found in real-time as the search progresses.
 *   **Windows Search Integration Awareness:** A status bar indicator shows whether the underlying Windows Search service is available, providing insight into system search performance.
 
-![File Search Main Window](https://github.com/user-attachments/assets/f9058f91-06bb-4a47-83a1-0b6a70d3750d)
-*The main application interface.*
 
-![File Search Results Example](https://github.com/user-attachments/assets/a0620300-5266-4b5c-87ce-c10314197ddc)
-*The search results interface.*
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 *   **Platform:** Windows
 *   **Language:** Python 3
@@ -42,7 +41,7 @@ An intuitive desktop application built with Python and Tkinter that allows users
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these instructions to set up and run the project on your Windows machine.
 
@@ -81,7 +80,7 @@ Follow these instructions to set up and run the project on your Windows machine.
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 With your virtual environment activated, run the `main.py` script to launch the application:
 
