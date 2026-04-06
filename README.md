@@ -59,8 +59,8 @@ Follow these instructions to set up and run the project on your Windows machine.
 1.  **Clone the repository:**
     Open PowerShell or Windows Terminal and navigate to the directory where you want to store the project.
     ```bash
-    git clone https://your-repository-url.git
-    cd your-project-folder
+    git clone https://github.com/readydave/file_search.git
+    cd file_search
     ```
 
 2.  **Create and activate a virtual environment:**
@@ -89,6 +89,7 @@ With your virtual environment activated, run the `main.py` script to launch the 
 
 ```bash
 python main.py
+```
 
 ## Project Structure
 
@@ -105,4 +106,4 @@ FileSearch/
 |
 ├── main.py                     # Main entry point to launch the app
 ├── requirements.txt            # Project dependencies
-└── readme.md                   # This file
+└── README.md                   # This file
