@@ -22,6 +22,11 @@ An intuitive desktop application built with Python and Tkinter that allows users
 *   **Live Results Counter:** See the number of files found in real-time as the search progresses.
 *   **Windows Search Integration Awareness:** A status bar indicator shows whether the underlying Windows Search service is available, providing insight into system search performance.
 
+![File Search Main Window](https://github.com/user-attachments/assets/f9058f91-06bb-4a47-83a1-0b6a70d3750d)
+*The main application interface.*
+
+![File Search Results Example](https://github.com/user-attachments/assets/a0620300-5266-4b5c-87ce-c10314197ddc)
+*The search results interface.*
 ---
 
 ## 🛠️ Technology Stack
