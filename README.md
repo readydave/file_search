@@ -93,6 +93,7 @@ python main.py
 
 ## Project Structure
 
+```text
 FileSearch/
 |
 ├── .venv/                      # Python virtual environment
@@ -107,3 +108,4 @@ FileSearch/
 ├── main.py                     # Main entry point to launch the app
 ├── requirements.txt            # Project dependencies
 └── README.md                   # This file
+```
